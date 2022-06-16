@@ -24,7 +24,22 @@ warmStrategyCache({
   strategy: pageCache,
 });
 
-// registerRoute(({ request }) => request.mode === 'navigate', pageCache);
+registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 // // TODO: Implement asset caching
-// registerRoute();
+// copied from PWA activities. Added array of assets for the RegEx portion.
+registerRoute(
+  ({ request }) => ['worker', 'style', 'script'].includes(request.destination),
+  new CacheFirst({
+    cacheName: 'assets-cache',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+      new ExpirationPlugin({
+        maxEntries: 60,
+        maxAgeSeconds: 30 * 24 * 60 * 60,
+      }),
+    ],
+  })
+);

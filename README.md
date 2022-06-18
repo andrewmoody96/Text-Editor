@@ -25,6 +25,8 @@ This app is a text editor that functions online or offline as a PWA.
 
 Type your code snippets into the window.
 
+### Photos Will Be Added Once It's Deployed to Heroku
+
 ---
 ## Contributing
 

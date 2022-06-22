@@ -18,14 +18,18 @@ This app is a text editor that functions online or offline as a PWA.
 ---
 ## Installation
 
-(Once I have a functioning deployment) The user can navigate here. Your browser will give you an icon to install the application to your machine.
+The user can navigate [here](https://jate-texteditingsoftware.herokuapp.com/). Your browser will give you an icon to install the application to your machine.
 
 ---
 ## Usage
 
-Type your code snippets into the window.
+Type your code snippets into the window. Install the application as a Progressive Web App to use it offline.
 
-### Photos Will Be Added Once It's Deployed to Heroku
+#### Photos
+![JATE running in the Browser](./assets/jateBrowser.png)
+![JATE Install Prompt](./assets/jateInstallprompt.png)
+![JATE as a PWA](./assets/jatePWA.png)
+![JATE in the system File Browser](./assets/jateFinder.png)
 
 ---
 ## Contributing
